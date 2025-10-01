@@ -1,0 +1,1 @@
+alert("Selamat datang di project web statis kelompok 7")
