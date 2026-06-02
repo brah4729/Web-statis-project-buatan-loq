@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* styling light mode */
+body {
+  background: white;
+  color: black;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: pink;
+  padding: 20px;
+  z-index: 0;
+}
+/* styling dark mode */
+body.darkmode {
+  background: black;
+  color: white;
+}
+
+body.darkmode > nav {
+  background-color: yellow;
+}
+/* styling untuk switch button */
+label {
+  width: 100px;
+  height: 40px;
+  position: relative;
+  display: block;
+  background: purple;
+  border-radius: 40px;
+  box-shadow: inset 0px 0px 15px black, inset 0px 0px 25px gray;
+  cursor: pointer;
+  z-index: 0;
+  transition: 0.3s;
+}
+
+label::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(135deg, rgb(241, 108, 130), rgb(247, 137, 137));
+  border-radius: 50%;
+  box-shadow: none 0px 0px 20px white, none 0px 0px 30px rgb(23, 14, 14);
+  z-index: 1;
+  transition: 0.3s;
+}
+
+input {
+  width: 0;
+  padding: 0;
+  visibility: hidden;
+}
+
+input:checked + label {
+  background: #242424;
+}
+
+input:checked + label::after {
+  left: 90px;
+  transform: translateX(-100%);
+  background: linear-gradient(135deg, #353535, orange);
+}
+
+label svg {
+  position: absolute;
+  width: 15px;
+  top: 12px;
+  fill: antiquewhite;
+  z-index: 3;
+}
+
+label svg.sun {
+  left: 13px;
+  fill: white;
+}
+
+label svg.moon {
+  top: 12px;
+  left: 75px;
+  fill: black;
+}
+
+input:checked + label svg.sun {
+  fill: black;
+}
+
+input:checked + label svg.moon {
+  fill: white;
+}

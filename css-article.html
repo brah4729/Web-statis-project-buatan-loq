@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="logo_kel_7-removebg-preview.png" type="image/x-icon" />
+  <title>Artikel CSS - Team Seven</title>
+  <script>
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.classList.add("darkmode");
+    }
+  </script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo-container">
+      <img src="v[1].png" alt="Logo website" class="logo-img" />
+      <h1 class="judul-tim">│Team Seven</h1>
+    </div>
+    
+    <div class="switchmode">
+      <input type="checkbox" id="darkmode" />
+      <label for="darkmode" class="toggle">
+        <svg class="sun" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="_x32_" viewBox="0 0 512 512" xml:space="preserve">
+          <g>
+            <ellipse class="st0" cx="256" cy="256" rx="137.275" ry="137.28" />
+            <rect x="241.16" class="st0" width="29.68" height="81.62" />
+            <rect x="241.16" y="430.38" class="st0" width="29.68" height="81.62" />
+            <polygon class="st0" points="181.665,97.56 140.855,26.88 115.15,41.72 155.96,112.41" />
+            <rect x="322.784" y="427.522" transform="matrix(-0.5001 -0.866 0.866 -0.5001 162.3364 978.4368)" class="st0" width="81.618" height="29.677" />
+            <polygon class="st0" points="26.88,140.85 97.565,181.66 112.41,155.96 41.72,115.15" />
+            <polygon class="st0" points="399.594,356.04 470.285,396.85 485.125,371.15 414.435,330.34" />
+            <rect y="241.16" class="st0" width="81.625" height="29.68" />
+            <rect x="430.375" y="241.16" class="st0" width="81.625" height="29.68" />
+            <polygon class="st0" points="26.88,371.14 41.72,396.85 112.406,356.04 97.565,330.33" />
+            <polygon class="st0" points="485.125,140.85 470.285,115.15 399.594,155.96 414.435,181.66" />
+            <rect x="133.566" y="401.543" transform="matrix(-0.866 -0.5 0.5 -0.866 55.7691 899.6527)" class="st0" width="29.682" height="81.624" />
+            <polygon class="st0" points="330.335,97.56 356.04,112.41 396.85,41.72 371.15,26.88" />
+          </g>
+        </svg>
+        <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="800px" height="17px" viewBox="0 0 24 24">
+          <path d="M12 21.8a9.796 9.796 0 0 1-1.245-19.513l1.286-.163-.843.984a8.285 8.285 0 0 0 8.519 13.383l1.252-.347-.696 1.096A9.755 9.755 0 0 1 12 21.8zM9.647 3.526a8.796 8.796 0 1 0 9.031 14.196 9.048 9.048 0 0 1-1.178.078A9.293 9.293 0 0 1 9.647 3.526z" />
+        </svg>
+      </label>
+    </div>
+  </header>
+
+  <!-- Navigasi -->
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="html-article.html">HTML</a></li>
+      <li><a href="css-article.html" class="active">CSS</a></li>
+      <li><a href="js-article.html">JS</a></li>
+      <li><a href="penutup.html">Penutup</a></li>
+    </ul>
+    <div class="running-text-container">
+      <div class="running-text">
+        TEAM SEVEN 7 │ SEKTE CRIPTO VERSI PENUS │ JAYA JAYA JAYA JAYA JAYA JAYA JAYA JAYA JAYA
+      </div>
+    </div>
+  </nav>
+
+  <!-- Konten Utama -->
+  <main>
+    <div class="page-title">
+      <h1>Artikel HTML, CSS, JS</h1>
+    </div>
+    
+    <article class="article-content">
+      <section>
+        <h2>Sejarah CSS</h2>
+        <p>
+          Nama CSS didapat dari fakta bahwa setiap deklarasi style yang berbeda dapat diletakkan secara berurutan, yang kemudian membentuk hubungan ayah-anak (parent-child) pada setiap style. CSS sendiri merupakan sebuah teknologi internet yang direkomendasikan oleh World Wide Web Consortium atau W3C pada tahun 1996. Setelah CSS distandardisasikan, Internet Explorer dan NNetscape melepas browser terbaru mereka yang telah sesuai atau paling tidak hampir mendekati dengan standar CSS.
+        </p>
+        <p>
+          CSS dikembangkan oleh Hakon Wium Lie pada tahun 1994 saat ia bekerja di CERN (Organisasi Eropa untuk Riset Nuklir) di Swiss. Saat itu, ia mengusulkan sebuah cara untuk menambahkan style pada halaman web. Setelah itu, pada tahun 1995, Hakon Wium Lie bergabung dengan Tim Berners-Lee di W3C (World Wide Web Consortium) dan bekerja sama dengan Bert Bos, yang pada saat itu sedang mengerjakan sebuah proposal serupa yang disebut CSS. Pada bulan Desember 1996, W3C merilis CSS1 sebagai rekomendasi resmi.
+        </p>
+        <p>
+          Pada tahun 1998, W3C merilis CSS2 yang menambahkan fitur-fitur baru seperti positioning, z-index, dan media types. Namun, adopsi CSS2 lambat karena banyak browser pada saat itu belum mendukungnya dengan baik.
+        </p>
+        <p>
+          Pada awal 2000-an, pengembangan CSS3 dimulai dengan tujuan untuk memecah spesifikasi menjadi modul-modul yang lebih kecil dan lebih mudah dikelola. Ini memungkinkan pengembangan dan adopsi fitur-fitur baru secara lebih cepat. Beberapa fitur populer dari CSS3 termasuk border-radius, box-shadow, dan media queries.
+        </p>
+        <p>
+          Saat ini, CSS terus berkembang dengan penambahan fitur-fitur baru dan peningkatan dukungan di berbagai browser. CSS telah menjadi salah satu teknologi inti dalam pengembangan web modern, memungkinkan desainer dan pengembang untuk menciptakan tampilan yang menarik dan responsif untuk situs web.
+        </p>
+        <p>
+          Secara umum, CSS telah mengalami perjalanan panjang sejak pengembangannya pada tahun 1994. Dari CSS1 yang sederhana hingga CSS3 yang kaya fitur, CSS telah menjadi alat penting dalam desain web modern.
+        </p>
+        <p>
+          Untuk saat ini terdapat tiga versi CSS, yaitu CSS1, CSS2, CSS3. CSS1 dikembangkan berpusat pada pemformatan dokumen HTML, CSS2 dikembangkan untuk memenuhi kebutuhan terhadap format dokumen agar bisa ditampilkan di printer, sedangkan CSS3 adalah versi terbaru dari CSS yang mampu melakukan banyak hal dalam desain website. CSS3 mendukung penentuan posisi konten, downloadable, huruf font, tampilan pada table /table layout dan media tipe untuk printer. Kehadiran versi CSS yang ketiga diharapkan lebih baik dari versi pertama dan kedua.
+        </p>
+        <p>
+          CSS3 juga dapat melakukan animasi pada halaman website, di antaranya animasi warna hingga animasi 3D. Dengan CSS3 desainer lebih dimudahkan dalam hal kompatibilitas websitenya pada smartphone dengan dukungan fitur baru yakni media query. Selain itu, banyak fitur baru pada CSS3, seperti: multiple background, border-radius, drop-shadow, border-image, CSS Math, dan CSS Object Model.
+        </p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
